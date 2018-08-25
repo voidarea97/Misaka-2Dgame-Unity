@@ -45,6 +45,7 @@ public class EnemyCharacter1 : Character {
         rotPositive = new Vector3(0, 0, 0);
         rotNegative = new Vector3(0, 180, 0);
 
+        heroTransform = GameObject.FindGameObjectWithTag("Hero").transform;
     }
     
 
@@ -66,7 +67,7 @@ public class EnemyCharacter1 : Character {
         #region
         if (action)
         {
-            heroTransform = GameObject.FindGameObjectWithTag("Hero").transform;
+            //heroTransform = GameObject.FindGameObjectWithTag("Hero").transform;
             //如已经到达英雄位置，停止移动
             if (Math.Abs(transform.position.x - heroTransform.position.x) < 0.1)
                 selfRigidbody.velocity = new Vector2(0.001f, selfRigidbody.velocity.y); 

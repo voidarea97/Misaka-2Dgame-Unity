@@ -7,6 +7,7 @@ public class HeroControl : MonoBehaviour {
     protected Rigidbody2D herorigidbody;
     protected HeroAnime heroAnime;
     protected HeroSkill heroSkill;
+    public UIJoystick joystick;
 
     //protected Transform skill1;   //技能1对应游戏gameobject的transform
     //protected Transform skill2;
@@ -35,8 +36,10 @@ public class HeroControl : MonoBehaviour {
 
     virtual protected void FixedUpdate()
     {
-        float xAxis = Input.GetAxisRaw("Horizontal");
-        float yAxis = Input.GetAxisRaw("Vertical");
+        //float xAxis = Input.GetAxisRaw("Horizontal");
+        //float yAxis = Input.GetAxisRaw("Vertical");
+        float xAxis = joystick.axisX;
+        float yAxis = joystick.axisY;
 
         if (gameObject.GetComponent<Character>().action)    //可行动
         {

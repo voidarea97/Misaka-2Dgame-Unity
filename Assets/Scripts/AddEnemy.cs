@@ -11,11 +11,13 @@ public class AddEnemy : MonoBehaviour {
         if (collision.gameObject.GetComponent <Character>())
         {
             if (collision.gameObject.GetComponent<Character>().kind == 0)
+            {
                 foreach (var item in Enemys)
                 {
                     item.SetActive(true);
                 }
-            gameObject.SetActive(false);
+                gameObject.SetActive(false);
+            }
         }
     }
 

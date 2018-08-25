@@ -31,8 +31,11 @@ public class BulletCollision : MonoBehaviour {
             if ((characterSelf.kind == 0 && (characterOther.kind > 100 && characterOther.kind < 200))
                 || ((characterSelf.kind > 100 && characterSelf.kind < 200) && characterOther.kind == 0))
             {
-                characterOther.BeHit(bulletBase);   //被击中角色的处理方法
-                bulletBase.survivalCollision--;     //子弹剩余碰撞次数-1
+                if (!characterOther.immune) //不处于免疫状态
+                {
+                    characterOther.BeHit(bulletBase);   //被击中角色的处理方法
+                    bulletBase.survivalCollision--;     //子弹剩余碰撞次数-1
+                }
             }
 
             onCollision.Invoke();   //附加碰撞事件
