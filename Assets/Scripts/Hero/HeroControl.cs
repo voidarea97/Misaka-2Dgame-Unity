@@ -7,7 +7,8 @@ public class HeroControl : MonoBehaviour {
     protected Rigidbody2D herorigidbody;
     protected HeroAnime heroAnime;
     protected HeroSkill heroSkill;
-    public UIJoystick joystick;
+    //public UIJoystick joystick;
+    public ScrollCircle joystick;
 
     //protected Transform skill1;   //技能1对应游戏gameobject的transform
     //protected Transform skill2;
@@ -40,7 +41,7 @@ public class HeroControl : MonoBehaviour {
         //float yAxis = Input.GetAxisRaw("Vertical");
         float xAxis = joystick.axisX;
         float yAxis = joystick.axisY;
-
+        //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y / 20.0f);
         if (gameObject.GetComponent<Character>().action)    //可行动
         {
             if (xAxis >= 0)
@@ -86,14 +87,7 @@ public class HeroControl : MonoBehaviour {
                     (herorigidbody.velocity.x, gameObject.GetComponent<Character>().speedY * yAxis);
                 heroAnime.StartRun();
             }
-            //skill1
-            //if (Input.GetKeyDown(KeyCode.A))    
-            //{
-            //    //施放
-            //    CastSkill(skillProperty1);
-            //    ////后摇结束后切换动画
-            //    //Invoke("EndSkill1", skillProperty1.stay);
-            //}
+
         }
     }
     //virtual protected void CastSkill(Transform skillTrans)    //施放指定技能

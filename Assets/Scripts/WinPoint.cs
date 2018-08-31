@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class WinPoint : MonoBehaviour {
+    //通关点
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

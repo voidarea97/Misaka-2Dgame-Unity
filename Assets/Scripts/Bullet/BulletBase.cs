@@ -9,7 +9,7 @@ public class BulletBase : MonoBehaviour {
 
     public float speedX;
     public float speedY;
-    public int kind;    //0:近战    1:飞行    2：
+    public int kind;    //0:跟随(Local)  1：滞留|独立飞行(Gloabal)
     public float damage;
     public float survivalTime;  //生存时间
     public float survivalCollision; //可碰撞次数

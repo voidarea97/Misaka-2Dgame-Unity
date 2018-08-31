@@ -55,8 +55,9 @@ public class EnemyCharacter1 : Character {
         
 
     }
-    private void FixedUpdate()
+    protected override void FixedUpdate()
     {
+        base.FixedUpdate();
         if(!alive)
         {
             selfRigidbody.velocity = new Vector2(0, 0);

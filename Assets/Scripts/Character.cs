@@ -37,4 +37,11 @@ public class Character : MonoBehaviour {
             die.Invoke();
         }
 	}
+    virtual protected void FixedUpdate()
+    {
+        //根据y轴位置设定z轴位置，实现层次遮挡效果
+        gameObject.transform.position = 
+            new Vector3(transform.position.x, transform.position.y, transform.position.y / 20.0f);
+        
+    }
 }

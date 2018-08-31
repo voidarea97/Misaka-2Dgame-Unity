@@ -21,7 +21,7 @@ public class UIJoystick : MonoBehaviour {
         //获取border对象的transform组件
         //border = GameObject.Find("border").transform;
 
-        GameObject.FindWithTag("Hero").GetComponent<HeroControl>().joystick = this;
+        //GameObject.FindWithTag("Hero").GetComponent<HeroControl>().joystick = this;
         initPosition = GetComponentInParent<RectTransform>().position;
         initScreenPosition = Camera.main.WorldToScreenPoint(GetComponentInParent<RectTransform>().position);
 
