@@ -5,6 +5,7 @@ In prosessing
 编写中
 
 ..之前编写过程未记录
+框架已基本完成
 
 8/25
 增加了一些贴图，优化了相机跟随的方式，使用了UGUI制作了自定义的虚拟摇杆，存在使用摇杆时按其他键会使摇杆失效的bug
@@ -20,6 +21,7 @@ In prosessing
 
 9/1
 上传可执行文件与截图
+
 
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/1.png)
 
