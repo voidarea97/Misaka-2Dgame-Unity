@@ -14,9 +14,8 @@ public class HeroControl : MonoBehaviour {
     //protected Transform skill2;
     //protected Transform skill3;
 
-
-    //public SkillProperty skillProperty1;
-
+    protected float xAxis, yAxis;
+    protected bool btn1, btn2, btn3;
 
     private Vector3 rotPositive;    //x轴正向
     private Vector3 rotNegative;    //x反向
@@ -39,9 +38,31 @@ public class HeroControl : MonoBehaviour {
     {
         //float xAxis = Input.GetAxisRaw("Horizontal");
         //float yAxis = Input.GetAxisRaw("Vertical");
-        float xAxis = joystick.axisX;
-        float yAxis = joystick.axisY;
-        //gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y / 20.0f);
+        xAxis = joystick.axisX;
+        yAxis = joystick.axisY;
+
+        btn1 = joystick.btn1;
+        btn2 = joystick.btn2;
+        btn3 = joystick.btn3;
+
+        #region 
+        //调整控制精度
+
+        if (xAxis >= 0.8)
+            xAxis = 1;
+        else if (xAxis <= 0.2 && xAxis >= -0.2)
+            xAxis = 0;
+        else if (xAxis <= -0.8)
+            xAxis = -1;
+        
+        if (yAxis >= 0.8)
+            yAxis = 1;
+        else if (yAxis <= 0.2 && yAxis >= -0.2)
+            yAxis = 0;
+        else if (yAxis <= -0.8)
+            yAxis = -1;
+        #endregion
+
         if (gameObject.GetComponent<Character>().action)    //可行动
         {
             if (xAxis >= 0)

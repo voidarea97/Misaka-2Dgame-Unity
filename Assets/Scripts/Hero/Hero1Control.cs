@@ -21,10 +21,12 @@ public class Hero1Control : HeroControl {
     protected override void FixedUpdate()
     {
         base.FixedUpdate();
-        if (Input.GetKeyDown(KeyCode.A))
+        if (btn1||Input.GetKeyDown(KeyCode.A))
         {
             //施放
             CastSkill(skillProperty1);
+            joystick.btn1 = false;
         }
     }
+
 }
