@@ -4,6 +4,8 @@ Scroll fight game of the comic Misaka the Railgun, 御坂美琴同人游戏
 In prosessing
 编写中
 
+可能参考了崩坏2？
+
 ..之前编写过程未记录
 框架已基本完成
 
