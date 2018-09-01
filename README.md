@@ -17,3 +17,28 @@ In prosessing
 
 9/1
 增加了头像、血量等UI，修改贴图
+
+9/1
+上传可执行文件与截图
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/1.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/2.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/3.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/4.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/5.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/6.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/6.1.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/7.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/8.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/9.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/10.png)
