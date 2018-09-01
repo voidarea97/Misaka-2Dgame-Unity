@@ -10,7 +10,7 @@ public class ScrollCircle : ScrollRect
     public float axisY;
     public bool btn1, btn2, btn3;
 
-    public HeroControl heroControl;
+    //public HeroControl heroControl;
 
     // 半径
     private float _mRadius = 0f;
@@ -23,8 +23,8 @@ public class ScrollCircle : ScrollRect
     protected override void Start()
     {
         base.Start();
-        heroControl = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroControl>();
-        heroControl.joystick = this;
+        //heroControl = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroControl>();
+        //heroControl.joystick = this;
         // 能移动的半径 = 摇杆的宽 * Dis
         _mRadius = content.sizeDelta.x * Dis;
 
