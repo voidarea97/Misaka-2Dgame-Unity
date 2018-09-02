@@ -14,16 +14,27 @@ public class CharactorInfo : MonoBehaviour {
     
     private string health;
 	// Use this for initialization
-	void Start () {
-        heroCharacter = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroCharacter>();
+	void Awake () {
+        
         barPos = healthBar.GetComponent<Transform>().position;
         barPosScreen = Camera.main.WorldToScreenPoint(barPos);
         initPos = barPos;
         initScreen = barPosScreen;
+        //healthBar.transform.position = barPos;
     }
-	
-	// Update is called once per frame
-	void FixedUpdate () {
+    private void Start()
+    {
+        heroCharacter = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroCharacter>();
+    }
+    void OnEnable()
+    {
+        Invoke("FindHero", 0.1f);
+        //heroCharacter = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroCharacter>();
+        barPos = initPos;
+        barPosScreen = initScreen;
+    }
+    // Update is called once per frame
+    void FixedUpdate () {
         health = "HP  "+ heroCharacter.health.ToString() + "/" + heroCharacter.defaultHealth.ToString();
         healthText.GetComponent<Text>().text = health;
 
@@ -34,4 +45,8 @@ public class CharactorInfo : MonoBehaviour {
         barPos = Camera.main.ScreenToWorldPoint(barPosScreen);
         healthBar.transform.position = barPos;
 	}
+    void FindHero()
+    {
+        heroCharacter = GameObject.FindGameObjectWithTag("Hero").GetComponent<HeroCharacter>();
+    }
 }

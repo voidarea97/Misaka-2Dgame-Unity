@@ -22,6 +22,8 @@ public class BulletCollision : MonoBehaviour {
         }
         if(objOther.tag=="Hard")    //碰撞墙等硬实体阻挡物
         {
+            if(gameObject.GetComponent<BulletBase>().kind==1&&(gameObject.GetComponent<Rigidbody2D>().velocity.x!=0
+                || gameObject.GetComponent<Rigidbody2D>().velocity.y != 0))
             bulletBase.survivalCollision = 0;   //直接销毁子弹
             return;
         }
