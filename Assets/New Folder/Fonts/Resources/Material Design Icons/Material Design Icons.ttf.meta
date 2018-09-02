@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: d7a623a26b4f8e24285c317369828468
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Material Icons
+  fontNames:
+  - Material Icons
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a0a40789b9baa45a68c6d593e02f648a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
