@@ -8,6 +8,8 @@ In prosessing
 
 ..之前编写过程未记录
 框架已基本完成
+UI修改中
+内容添加中
 
 8/25
 增加了一些贴图，优化了相机跟随的方式，使用了UGUI制作了自定义的虚拟摇杆，存在使用摇杆时按其他键会使摇杆失效的bug
@@ -24,11 +26,17 @@ In prosessing
 9/1
 上传可执行文件与截图
 
+9/2
+修改UI
 
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/1.png)
 
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/2.png)
+9/2 截图
+UI修改中
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/11.png)
 
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/12.png)
+
+9/1
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/3.png)
 
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/4.png)
@@ -46,3 +54,9 @@ In prosessing
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/9.png)
 
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/10.png)
+
+9/1 运行截图
+目前被已更改
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/1.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/2.png)
