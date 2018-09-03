@@ -45,12 +45,6 @@ UI修改中
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/180903.5.png)
 
 
-9/2 截图
-UI修改中
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/11.png)
-
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/12.png)
-
 9/1
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/3.png)
 
@@ -79,3 +73,7 @@ UI修改中
 
 9/2
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/8.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/11.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/12.png)
