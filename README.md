@@ -66,14 +66,18 @@ UI修改中
 
 之前版本截图
 目前被已更改
+
+9/2
+
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/11.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/12.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/8.png)
+
 9/1 
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/1.png)
 
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/2.png)
 
-9/2
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/8.png)
-
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/11.png)
-
-![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/12.png)
