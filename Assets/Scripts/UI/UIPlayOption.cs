@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIPlayOption : UIBase
 {
+    public GameObject BtnBGMOn;
     public GameObject BtnBGMOff;
+    public GameObject BtnSoundOn;
     public GameObject BtnSoundOff;
 
     public override string ParentName()
@@ -52,15 +55,17 @@ public class UIPlayOption : UIBase
         Time.timeScale = 0; //暂停游戏
 
         //设置音乐开关初始状态
-        if (AudioManager.Instance.Mute) 
+        if (AudioManager.Instance.Mute)
         {
-            BtnBGMOff.SetActive(true);
+            BtnBGMOn.GetComponent<Button>().enabled = true;
+            BtnBGMOff.GetComponent<Button>().enabled = false;
         }
         else
         {
-            BtnBGMOff.SetActive(false);
+            BtnBGMOff.GetComponent<Button>().enabled = true;
+            BtnBGMOn.GetComponent<Button>().enabled = false;
         }
-    
+
     }
 
     public override void OnExitng()

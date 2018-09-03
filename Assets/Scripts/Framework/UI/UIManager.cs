@@ -45,8 +45,9 @@ public class UIManager : MonoBehaviour {
             OldTopUI.OnPausing();
         }
         UIBase NewTopUI = GetUIBase(UIName);
-        NewTopUI.OnEntering();
         UIStack.Push(NewTopUI);
+        NewTopUI.OnEntering();
+
 
     }
 

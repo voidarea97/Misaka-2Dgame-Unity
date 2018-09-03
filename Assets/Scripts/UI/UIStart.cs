@@ -1,8 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UIStart : UIBase {
+
+    public GameObject btnStart;
+    public GameObject btnOption;
 
     public override string ParentName()
     {
@@ -38,11 +43,15 @@ public class UIStart : UIBase {
 
     public override void OnPausing()
     {
-        gameObject.SetActive(false);
+        btnOption.GetComponent<Button>().enabled = false;
+        btnStart.GetComponent<Button>().enabled = false;
+        //gameObject.SetActive(false);
     }
 
     public override void OnResuming()
     {
+        btnOption.GetComponent<Button>().enabled = true;
+        btnStart.GetComponent<Button>().enabled = true;
         gameObject.SetActive(true);
     }
 

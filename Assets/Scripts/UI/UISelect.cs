@@ -20,7 +20,7 @@ public class UISelect : UIBase {
         UIManager.Instance.PopUIPanel();
         //UIManager.Instance.PushUIPanel("UIBackg");
     }
-    public void Goto1st()
+    public void GotoPlay()
     {
         UIManager.Instance.PopAll();
         UIManager.Instance.PushUIPanel("UIPlay");
