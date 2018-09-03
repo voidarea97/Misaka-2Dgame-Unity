@@ -29,7 +29,7 @@ public class HeroControl : MonoBehaviour {
         rotNegative = new Vector3(0, 180, 0);
         gameObject.GetComponent<Character>().xDirection = true;
 
-        joystick = GameObject.Find("UIPlay/JoystickBack").GetComponent<ScrollCircle>();
+        joystick = GameObject.Find("UIPlay/Control/JoystickBack").GetComponent<ScrollCircle>();
 
         //初始化相机位置
         Vector3 cameraPos = Camera.main.transform.position;
