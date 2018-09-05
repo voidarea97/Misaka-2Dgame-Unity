@@ -32,6 +32,9 @@ UI修改中
 9/3
 修改UI，解决屏幕适配问题
 
+9/5
+调整UI，修复一些bug
+
 
 9/3 截图
 ![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/180903.1.png)
