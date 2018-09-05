@@ -16,12 +16,12 @@ public class LoadChapter : MonoBehaviour {
     public void Load(int num)
     {
 
-        switch(num)
+        switch((num-1)%2)
         {
-            case 1:
+            case 0:
                 chapterNow = Instantiate(chapter1, chapters.transform);
                 break;
-            case 2:
+            case 1:
                 chapterNow = Instantiate(chapter2, chapters.transform);
                 break;
         }
