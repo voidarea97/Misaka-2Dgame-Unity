@@ -14,7 +14,7 @@ public class HeroSkill : MonoBehaviour {
     protected Dictionary<string, GameObject> skillDict
         = new Dictionary<string, GameObject>();  //技能子弹名称与其预制体对应字典
 
-    public string ResourcesDir = "Hero/Hero1Skill";  //资源路径
+    public string ResourcesDir = "";  //资源路径
 
 
     public void Skill(SkillProperty skillProperty)

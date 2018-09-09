@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Hero1Skill : HeroSkill {
 
+
     public SkillProperty skillProperty1;
     public SkillProperty skillProperty2;
     public SkillProperty skillProperty3;
 
     protected override void Start()
     {
+        ResourcesDir = "Hero/Hero1Skill";
         base.Start();
         //加载技能子弹
         LoadResouce("Skill1Bullet");

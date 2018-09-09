@@ -2,15 +2,12 @@
 //using System.Collections.Generic;
 using UnityEngine;
 
-public class UIBase : MonoBehaviour {
+public abstract class UIBase : MonoBehaviour {
 
     
     public virtual string Name{get;set;}
-    public virtual string ParentName()
-    {
-        return "";
-    }
-
+    public abstract string ParentName();
+   
     public virtual void OnEntering()
     {
 
