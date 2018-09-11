@@ -21,7 +21,8 @@ public class SkillProperty : MonoBehaviour {
 
     public float damage;
 
-    
+    public float xOffset;
+    public float yOffset;
 
     void Start()
     {

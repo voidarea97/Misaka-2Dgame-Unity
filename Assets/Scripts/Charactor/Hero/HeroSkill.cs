@@ -26,9 +26,20 @@ public class HeroSkill : MonoBehaviour {
             {
                 //技能动画
                 heroAnime.StartSkill(skillProperty.skillName);
+
                 //产生技能子弹               
+                Vector3 offset = gameObject.transform.position;
+                    //调整子弹位置
+                bool xDir = gameObject.GetComponent<Character>().xDirection;
+                if (xDir)
+                    offset.x += skillProperty.xOffset;
+                else
+                    offset.x -= skillProperty.xOffset;
+                offset.y += skillProperty.yOffset;
                 GameObject skillBullet = Instantiate(skillDict[skillProperty.skillName + "Bullet"],
-                    gameObject.transform.position, transform.rotation);
+                    offset, transform.rotation);
+
+
                 if(skillBullet.GetComponent<BulletBase>().kind == 1)
                     skillBullet.transform.SetParent(gloableBullet.transform, true);
                 else
@@ -38,7 +49,7 @@ public class HeroSkill : MonoBehaviour {
                 //if (gameObject.GetComponent<Character>().xDirection)
                 //    x = 1;
                 //skill1Bullet.GetComponent<BulletBase>().direction = new Vector2(x, 0);
-                skillBullet.GetComponent<BulletBase>().xDirection = GetComponent<Character>().xDirection;
+                skillBullet.GetComponent<BulletBase>().xDirection = xDir;
                 skillBullet.GetComponent<BulletBase>().belong = gameObject;
                 //确定子弹技能伤害
                 skillBullet.GetComponent<BulletBase>().damage = skillProperty.damage;

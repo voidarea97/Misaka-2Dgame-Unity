@@ -6,7 +6,7 @@ using UnityEngine;
 public class UIManager : MonoBehaviour {
 
     //单例模式  hungry
-    private static UIManager _instance = new UIManager();
+    private static UIManager _instance;
     private UIManager() { }
     public static UIManager Instance
     {
@@ -116,7 +116,7 @@ public class UIManager : MonoBehaviour {
 	// Use this for initialization
 	void Awake ()
     {
-        //_instance = this;
+        _instance = this;
         //LoadUIResouces();
 	}
 	
