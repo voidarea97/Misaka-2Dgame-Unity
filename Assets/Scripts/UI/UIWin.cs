@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class UIWin : UIBase {
+
+    
+
     public override string ParentName()
     {
         return "UIPlay";
@@ -24,8 +27,9 @@ public class UIWin : UIBase {
         gameObject.GetComponent<UnloadChapter>().Unload();
         gameObject.GetComponent<LoadChapter>().Load(num+1);
         Time.timeScale = 1;
-        UIManager.Instance.PopUIPanel();
-
+        //UIManager.Instance.PopUIPanel();
+        UIManager.Instance.PopAll();
+        UIManager.Instance.PushUIPanel("UIPlay");
     }
 
     public void Select()

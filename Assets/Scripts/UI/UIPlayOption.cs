@@ -32,6 +32,7 @@ public class UIPlayOption : UIBase
     {
         UIManager.Instance.PopAll();
         UIManager.Instance.PushUIPanel("UIBackg");
+        UIManager.Instance.PushUIPanel("PanelSelect");
         //UIManager.Instance.PushUIPanel("PanelStart");
         //UIManager.Instance.PushUIPanel("PanelSelect");
     }

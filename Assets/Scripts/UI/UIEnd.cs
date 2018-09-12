@@ -41,6 +41,7 @@ public class UIEnd : UIBase {
     public override void OnEntering()
     {
         gameObject.SetActive(true);
+        hero = GameObject.FindWithTag("Hero");
         Time.timeScale = 0;
     }
 

@@ -6267,7 +6267,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1
+  m_Mass: 1.5288986
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -6497,7 +6497,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.7, y: 6.28}
+    oldSize: {x: 3.77, y: 6.39}
     newSize: {x: 9.2, y: 15.61}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -6803,7 +6803,10 @@ MonoBehaviour:
   xDirection: 1
   state: 0
   action: 1
+  uiplay: {fileID: 0}
   bulletPath: 
+  searchTime: 0.2
+  atkTime: 0.8
 --- !u!114 &114128379122455928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6832,7 +6835,10 @@ MonoBehaviour:
   xDirection: 1
   state: 0
   action: 1
+  uiplay: {fileID: 0}
   bulletPath: 
+  searchTime: 0.2
+  atkTime: 0.8
 --- !u!114 &114129755642405818
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6911,7 +6917,10 @@ MonoBehaviour:
   xDirection: 1
   state: 0
   action: 1
+  uiplay: {fileID: 0}
   bulletPath: 
+  searchTime: 0.2
+  atkTime: 0.8
 --- !u!114 &114353252548750156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7056,7 +7065,10 @@ MonoBehaviour:
   xDirection: 1
   state: 0
   action: 1
+  uiplay: {fileID: 0}
   bulletPath: 
+  searchTime: 0.2
+  atkTime: 0.8
 --- !u!114 &114619245317310358
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7160,7 +7172,10 @@ MonoBehaviour:
   xDirection: 1
   state: 0
   action: 1
+  uiplay: {fileID: 0}
   bulletPath: 
+  searchTime: 0.2
+  atkTime: 0.8
 --- !u!114 &114719834200634952
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10074,7 +10089,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 13aecfdcab7bec24ab920426ee37cbeb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0601e1f89a7509d4489c22ae413a54cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

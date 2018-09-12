@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EnemyCharacter1 : Character {
 
+    public UIPlay uiplay;
     //public GameObject atk;
     public string bulletPath;   //攻击子弹prefab存储路径
     private GameObject atkBulletPrefab;     //子弹prefab
@@ -14,7 +15,9 @@ public class EnemyCharacter1 : Character {
     private EnemyAnime anime;  
 
     private float searchTimeDelay;    //搜寻目标延时
+    public float searchTime;
     private float atkTimeDelay;     //攻击延时
+    public float atkTime;
 
     private Vector3 rotPositive;    //x轴正向
     private Vector3 rotNegative;    //x反向
@@ -27,10 +30,17 @@ public class EnemyCharacter1 : Character {
         }
         health -= bulletBase.damage;    //损失生命值等于子弹伤害
 
+        //显示伤害数字
+        //Vector2 numPos = gameObject.transform.position;
+        //numPos.y += 0.6f;
+        //numPos = Camera.main.WorldToScreenPoint(numPos);
+        uiplay.ShowDamage(gameObject, bulletBase.damage);
     }
 
     protected override void Start()
     {
+        uiplay = GameObject.Find("/UI/UIPlay").GetComponent<UIPlay>();
+
         base.Start();
         selfRigidbody = gameObject.GetComponent<Rigidbody2D>();
         anime = gameObject.GetComponent<EnemyAnime>();
@@ -38,9 +48,9 @@ public class EnemyCharacter1 : Character {
         bulletPath = "Enemy/EnemyClass1/";
         atkBulletPrefab = Resources.Load<GameObject>(bulletPath+"AtkBullet");
 
-
-        searchTimeDelay = 0;
-        atkTimeDelay = 0;
+        //设置攻击与搜敌延迟
+        searchTimeDelay = searchTime;
+        atkTimeDelay = atkTime;
 
         rotPositive = new Vector3(0, 0, 0);
         rotNegative = new Vector3(0, 180, 0);
@@ -78,8 +88,8 @@ public class EnemyCharacter1 : Character {
             if (Math.Abs(transform.position.y - heroTransform.position.y) < 0.1)
                 selfRigidbody.velocity = new Vector2(selfRigidbody.velocity.x, 0.001f);
 
-            searchTimeDelay += Time.deltaTime;
-            if (searchTimeDelay > 0.2)    //每0.2秒调整方向
+            searchTimeDelay -= Time.deltaTime;
+            if (searchTimeDelay <= 0)    //每0.2秒调整方向
             {
 
                 if (transform.position.x - heroTransform.position.x < -0.1)
@@ -110,11 +120,11 @@ public class EnemyCharacter1 : Character {
                 //else
                 //    selfRigidbody.velocity = new Vector2(selfRigidbody.velocity.x, 0);
 
-                searchTimeDelay = 0;
+                searchTimeDelay = searchTime;
             }
 
-            atkTimeDelay += Time.deltaTime;
-            if(atkTimeDelay>0.8)
+            atkTimeDelay -= Time.deltaTime;
+            if(atkTimeDelay<=0)
             {
                 if(Math.Abs(transform.position.x-heroTransform.position.x)<0.3
                     &&Math.Abs(transform.position.y-heroTransform.position.y)<0.3)
@@ -122,7 +132,7 @@ public class EnemyCharacter1 : Character {
                     Atk();
                     //攻击
                 }
-                atkTimeDelay = 0;
+                atkTimeDelay = atkTime;
             }
         }
         #endregion

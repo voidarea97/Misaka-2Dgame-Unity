@@ -676,6 +676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e0d3b4c14910f489b4b1e024fac914, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageNumPrefab: {fileID: 0}
 --- !u!114 &114866405549953964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -857,7 +858,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -922,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000060915454, y: -0.0000150038895}
+  m_AnchoredPosition: {x: 0.000021314454, y: 0.000019817318}
   m_SizeDelta: {x: 191.9, y: 191.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224152342414508846
