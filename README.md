@@ -13,6 +13,9 @@ UI修改中
 丑
 没有素材
 
+9/17
+解决层次遮挡中的bug，增加默认横屏，更新贴图
+
 9/12
 更改贴图，更改UI，增加伤害显示
 
@@ -44,6 +47,14 @@ UI修改中
 增加了一些贴图，优化了相机跟随的方式，使用了UGUI制作了自定义的虚拟摇杆，存在使用摇杆时按其他键会使摇杆失效的bug
 
 
+
+9/17
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/180917.1.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/180917.2.png)
+
+![Image text](https://github.com/voidarea97/Misaka-2Dgame-Unity/blob/master/%E8%BF%90%E8%A1%8C%E6%88%AA%E5%9B%BE/180917.3.png)
 
 9/12 截图
 
