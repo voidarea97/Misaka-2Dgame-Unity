@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 
 public class ButtonAnime : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IDragHandler
 {
+    //按钮阴影动画脚本
     public GameObject defaultShadow;
     public GameObject highlihgt;
     public GameObject click;
@@ -25,14 +26,7 @@ public class ButtonAnime : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        //if (eventData.pointerId == -1)
-        //{
-        //    Debug.Log("Left Mouse Clicked.");
-        //}
-        //else if (eventData.pointerId == -2)
-        //{
-        //    Debug.Log("Right Mouse Clicked.");
-        //}
+
     }
 
     public void OnPointerEnter(PointerEventData eventData)

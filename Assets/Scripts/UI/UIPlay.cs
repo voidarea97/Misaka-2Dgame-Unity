@@ -41,7 +41,7 @@ public class UIPlay : UIBase {
         damageNum.transform.SetParent(gameObject.transform);
         damageNum.transform.localScale = new Vector3(1, 1, 1);
 
-        damageNum.GetComponent<DamageNumFollow>().GetCharactor(pos);
+        damageNum.GetComponent<DamageNumFollow>().Getcharacter(pos);
 
         damageNum.GetComponent<Text>().text = num.ToString();
         StartCoroutine(DestroyDamageNum(damageNum));

@@ -11,6 +11,7 @@ public class EnemyCharacter1 : Character {
     private GameObject atkBulletPrefab;     //子弹prefab
 
     private Transform heroTransform;
+    private Character heroCharacter;
     private Rigidbody2D selfRigidbody;
     private EnemyAnime anime;  
 
@@ -56,6 +57,7 @@ public class EnemyCharacter1 : Character {
         rotNegative = new Vector3(0, 180, 0);
 
         heroTransform = GameObject.FindGameObjectWithTag("Hero").transform;
+        heroCharacter = heroTransform.GetComponent<Character>();
     }
     
 
@@ -109,11 +111,11 @@ public class EnemyCharacter1 : Character {
                 //else
                 //    selfRigidbody.velocity = new Vector2(0, selfRigidbody.velocity.y);
 
-                if (transform.position.y - heroTransform.position.y < -0.1)
+                if (transform.position.y- heroTransform.position.y  < -0.1)
                 {
                     selfRigidbody.velocity = new Vector2(selfRigidbody.velocity.x, speedY);
                 }
-                else if (transform.position.y - heroTransform.position.y > 0.1)
+                else if (transform.position.y  - heroTransform.position.y  > 0.1)
                 {
                     selfRigidbody.velocity = new Vector2(selfRigidbody.velocity.x, -speedY);
                 }

@@ -7,7 +7,9 @@ public class WinPoint : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<Character>().kind==0)
+        Character character = collision.gameObject.GetComponent<Character>();
+        if(character)
+        if (character.kind==0)
         {
             UIManager.Instance.PushUIPanel("PanelWin");
         }

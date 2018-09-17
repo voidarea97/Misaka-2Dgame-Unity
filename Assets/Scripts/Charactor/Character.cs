@@ -24,10 +24,18 @@ public class Character : MonoBehaviour {
     public bool action;  //可行动
 
     virtual public void BeHit(BulletBase bulletBase) { }   //被击中
-    
+
+    public float halfy =0;
 
     virtual protected void Start () {
         //alive = 1;
+        //设置底部偏移位置
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        if (spriteRenderer)
+        {
+            halfy = spriteRenderer.bounds.size.y * 0.5f;
+        }
+        
 	}
 	
 	virtual protected void Update () {
@@ -35,9 +43,10 @@ public class Character : MonoBehaviour {
 	}
     virtual protected void FixedUpdate()
     {
-        //根据y轴位置设定z轴位置，实现层次遮挡效果
+        //根据sprite底部y轴位置设定z轴位置，实现层次遮挡效果
+
         gameObject.transform.position = 
-            new Vector3(transform.position.x, transform.position.y, transform.position.y / 20.0f);
+            new Vector3(transform.position.x, transform.position.y, (transform.position.y-halfy) / 3.0f);
         if (alive && health <= 0)
         {
             alive = false;

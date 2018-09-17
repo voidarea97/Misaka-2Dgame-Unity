@@ -8,7 +8,7 @@ public class CharactorInfo : MonoBehaviour {
     public GameObject healthText;
     public GameObject healthBar;
     public HeroCharacter heroCharacter;
-    public GameObject barReference;
+    public GameObject barReference;     //血条参考位置
 
     //public float healthbarLong = 485f;
 
@@ -41,10 +41,11 @@ public class CharactorInfo : MonoBehaviour {
     }
     
     void FixedUpdate () {
+        //更新血量
         health = "HP  "+ heroCharacter.health.ToString() + "/" + heroCharacter.defaultHealth.ToString();
         healthText.GetComponent<Text>().text = health;
 
-
+        //调整血条
         barPos.x = barReference.GetComponent<Transform>().position.x + dis -
             (2*dis * (1 - heroCharacter.health / heroCharacter.defaultHealth));
         //barPosScreen.x = initScreen.x
