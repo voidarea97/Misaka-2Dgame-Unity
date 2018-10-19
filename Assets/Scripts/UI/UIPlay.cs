@@ -9,10 +9,7 @@ public class UIPlay : UIBase {
 
     public override string Name
     {
-        get
-        {
-            return "UIPlay";
-        }
+        get{ return "UIPlay"; }
     }
 
     public override string ParentName()
@@ -33,6 +30,10 @@ public class UIPlay : UIBase {
     public void GoToSelect()
     {
         UIManager.Instance.PushUIPanel("PanelSelect");
+    }
+    public void AddEnemy()
+    {
+        UIManager.Instance.PushUIPanel("PanelEnemyAdder");
     }
 
     public void ShowDamage(GameObject pos, float num)      //显示伤害数字

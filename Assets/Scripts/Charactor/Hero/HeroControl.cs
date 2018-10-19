@@ -54,9 +54,9 @@ public class HeroControl : MonoBehaviour {
         btn2 = joystick.btn2;
         btn3 = joystick.btn3;
 
-        #region 
-        //调整控制精度
 
+        //调整控制精度
+        #region 
         if (xAxis >= 0.8)
             xAxis = 1;
         else if (xAxis <= 0.2 && xAxis >= -0.2)

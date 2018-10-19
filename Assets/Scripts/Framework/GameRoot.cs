@@ -15,6 +15,9 @@ public class GameRoot : MonoBehaviour {
         UIManager.Instance.LoadResouce("PanelPlayOption");
         UIManager.Instance.LoadResouce("PanelEnd");
         UIManager.Instance.LoadResouce("PanelWin");
+
+        UIManager.Instance.LoadResouce("PanelEnemyAdder");
+
         //入栈初始背景UI
         UIManager.Instance.PushUIPanel("UIBackg");
 
