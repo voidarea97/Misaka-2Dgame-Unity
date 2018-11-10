@@ -17,8 +17,10 @@ public class Character : MonoBehaviour {
     public float speedX;
     public float speedY;
     public int kind;   //0:hero    101-199:enemy    201-299:weapon
+    public string charactorName;
 
     public bool xDirection; //角色x轴朝向  1：右
+    public bool yDirection; //1:上
 
     public int state;   //异常状态
     public bool action;  //可行动
@@ -35,6 +37,8 @@ public class Character : MonoBehaviour {
         {
             halfy = spriteRenderer.bounds.size.y * 0.5f;
         }
+
+        health = defaultHealth;
         
 	}
 	

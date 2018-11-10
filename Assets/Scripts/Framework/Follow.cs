@@ -7,6 +7,8 @@ public class Follow : MonoBehaviour {
 
     Transform heroTransform;
     Vector3 trans;
+    public float xDis;
+    public float yDis;
 
     public void FollowHero(GameObject hero)
     {
@@ -16,6 +18,7 @@ public class Follow : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         //heroTransform = GameObject.FindWithTag("Hero").transform;
+        xDis = 3.5f;
 	}
 	
 	// Update is called once per frame
@@ -25,12 +28,12 @@ public class Follow : MonoBehaviour {
             Vector3 vTrans = heroTransform.position;
             if (heroTransform.gameObject.GetComponent<Character>().xDirection)
             {
-                if (Math.Abs(transform.position.x - heroTransform.position.x - 3.5) > 0.2)
+                if (Math.Abs(transform.position.x - heroTransform.position.x - xDis) > 0.2)
                 {
-                    vTrans.x += 3.5f;
+                    vTrans.x += xDis;
                     if (vTrans.x < 0)
                         vTrans.x = 0;
-                    if (Math.Abs(transform.position.x - heroTransform.position.x - 3.5) > 2)
+                    if (Math.Abs(transform.position.x - heroTransform.position.x - xDis) > 2)
                         trans = Vector3.Lerp(transform.position, vTrans, 0.015f);
                     else
                         trans = Vector3.Lerp(transform.position, vTrans, 0.025f);
@@ -41,14 +44,14 @@ public class Follow : MonoBehaviour {
             }
             else
             {
-                if (Math.Abs(transform.position.x - heroTransform.position.x + 3.5) > 0.2)
+                if (Math.Abs(transform.position.x - heroTransform.position.x + xDis) > 0.2)
                 {
                     //避免移出边界
-                    vTrans.x -= 3.5f;   //相机目标位置
+                    vTrans.x -= xDis;   //相机目标位置
                     if (vTrans.x < 0)
                         vTrans.x = 0;
                     //大幅移动相机时更平滑
-                    if(Math.Abs(transform.position.x - heroTransform.position.x + 3.5) > 2)
+                    if(Math.Abs(transform.position.x - heroTransform.position.x + xDis) > 2)
                         trans = Vector3.Lerp(transform.position, vTrans, 0.015f);
                     else
                         trans = Vector3.Lerp(transform.position, vTrans, 0.025f);

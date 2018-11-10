@@ -36,7 +36,7 @@ public class LoadChapter : MonoBehaviour {
         chapters = GameObject.Find("/Chapters");
         
         chapter1 = chapters.transform.Find("Chapter1").gameObject;
-        chapter2 = chapters.transform.Find("Chapter2").gameObject;
+        chapter2 = chapters.transform.Find("ChapterTest").gameObject;
         //chapter1 = chapters.transform.Find("Chapter3").gameObject;
         //chapter1 = chapters.transform.Find("Chapter4").gameObject;
     }

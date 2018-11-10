@@ -42,6 +42,7 @@ public class EnemyCharacter1 : Character {
 
     protected override void Start()
     {
+        name = "普通1";
         //uiplay = GameObject.Find("/UI/UIPlay").GetComponent<UIPlay>();
         mediator = GameObject.Find("/Chapters/ChapterNow/Mediator").GetComponent<Mediator>();
 

@@ -103,6 +103,7 @@ public class HeroControl : MonoBehaviour {
 
                 herorigidbody.velocity = new Vector2
                     (herorigidbody.velocity.x, gameObject.GetComponent<Character>().speedY * yAxis);
+                gameObject.GetComponent<Character>().yDirection = true;
                 if (yAxis == 0)
                 {
                     if(xAxis==0)
@@ -116,6 +117,7 @@ public class HeroControl : MonoBehaviour {
                 herorigidbody.velocity = new Vector2
                     (herorigidbody.velocity.x, gameObject.GetComponent<Character>().speedY * yAxis);
                 heroAnime.StartRun();
+                gameObject.GetComponent<Character>().yDirection = false;
             }
 
         }

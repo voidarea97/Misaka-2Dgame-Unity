@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Chapter
   - Transparent
+  - Generator
   layers:
   - Default
   - TransparentFX
