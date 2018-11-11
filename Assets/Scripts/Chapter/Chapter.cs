@@ -5,6 +5,7 @@ using UnityEngine;
 public class Chapter : MonoBehaviour {
 
     public int num;
+    //public Mediator mediator;
     //private UIPlay uiPlay;
 
     //private void Awake()
@@ -16,4 +17,16 @@ public class Chapter : MonoBehaviour {
     //{
     //    uiPlay.ShowDamage(obj, num);
     //}
+    public bool hasCustomGenerator;
+
+    private void OnEnable()
+    {
+        if (hasCustomGenerator)
+        {
+            Mediator.Instance.SetAddBtn(true);
+        }
+        else
+            Mediator.Instance.SetAddBtn(false);
+    }
 }
+

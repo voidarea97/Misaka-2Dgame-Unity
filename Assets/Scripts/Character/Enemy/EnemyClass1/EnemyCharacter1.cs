@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyCharacter1 : Character {
 
-    public Mediator mediator;   //中介类，用于场景和UI的通信
+    //public Mediator mediator;   //中介类，用于场景和UI的通信
     //public UIPlay uiplay;
     //public GameObject atk;
     public string bulletPath;   //攻击子弹prefab存储路径
@@ -37,14 +37,14 @@ public class EnemyCharacter1 : Character {
         //numPos.y += 0.6f;
         //numPos = Camera.main.WorldToScreenPoint(numPos);
         //uiplay.ShowDamage(gameObject, bulletBase.damage);
-        mediator.ShowDamage(gameObject, bulletBase.damage);
+        Mediator.Instance.ShowDamage(gameObject, bulletBase.damage);
     }
 
     protected override void Start()
     {
         name = "普通1";
         //uiplay = GameObject.Find("/UI/UIPlay").GetComponent<UIPlay>();
-        mediator = GameObject.Find("/Chapters/ChapterNow/Mediator").GetComponent<Mediator>();
+        //mediator = GameObject.Find("/Chapters/ChapterNow/Mediator").GetComponent<Mediator>();
 
         base.Start();
         selfRigidbody = gameObject.GetComponent<Rigidbody2D>();

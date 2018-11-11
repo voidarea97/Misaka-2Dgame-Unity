@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class UIEnemyAdder : UIBase {
 
-    private CharactorGenerator generator;
+    private CharacterGenerator generator;
     private Dictionary<int, string> nameDic;
 
     private int enemyClass; //num:0
@@ -111,7 +111,7 @@ public class UIEnemyAdder : UIBase {
     
     void Start () {
 
-        generator = GameObject.FindWithTag("Generator").GetComponent<CharactorGenerator>();
+        generator = GameObject.FindWithTag("Generator").GetComponent<CharacterGenerator>();
         nameDic = new Dictionary<int, string>();
         nameDic.Add(0, "木桩");
         nameDic.Add(1, "普通1");

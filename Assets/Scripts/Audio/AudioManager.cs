@@ -8,6 +8,7 @@ public class AudioManager : MonoBehaviour {
 
 
     private static AudioManager _instance;
+    private AudioManager() { }
     public static AudioManager Instance
     {
         get { return _instance; }

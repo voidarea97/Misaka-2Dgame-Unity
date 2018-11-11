@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIPlay : UIBase {
 
     public GameObject damageNumPrefab;
+    public GameObject addButton;
 
     public override string Name
     {
@@ -55,10 +56,18 @@ public class UIPlay : UIBase {
         Destroy(damNum);
     }
 
+    public void SetAddBtn(bool b)   //是否显示添加敌人按钮
+    {
+        addButton.SetActive(b);
+    }
+
+
+
     public override void OnEntering()
     {
         GetComponent<Canvas>().worldCamera = Camera.main;
         gameObject.SetActive(true);
+        
     }
 
     public override void OnExitng()
@@ -78,6 +87,7 @@ public class UIPlay : UIBase {
 
     void Awake () {
 		damageNumPrefab= Resources.Load<GameObject>("UI/Components/DamageNum");
+        Mediator.Instance.SetUIPlay(this);      //设置与场景通信的中介
     }
 	
 	// Update is called once per frame

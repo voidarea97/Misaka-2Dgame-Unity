@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyCharacter0 : Character {
 
-    public Mediator mediator;   //中介类，用于场景和UI的通信
+    //public Mediator mediator;   //中介类，用于场景和UI的通信
     
     public override void BeHit(BulletBase bulletBase)
     {
@@ -13,12 +13,12 @@ public class EnemyCharacter0 : Character {
 
         //显示伤害数字
         //uiplay.ShowDamage(gameObject, bulletBase.damage);
-        mediator.ShowDamage(gameObject, bulletBase.damage);
+        Mediator.Instance.ShowDamage(gameObject, bulletBase.damage);
     }
 
     protected override void Start () {
 
-        mediator = GameObject.Find("/Chapters/ChapterNow/Mediator").GetComponent<Mediator>();
+        //mediator = GameObject.Find("/Chapters/ChapterNow/Mediator").GetComponent<Mediator>();
         name = "木桩";
     }
 	
