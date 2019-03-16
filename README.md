@@ -1,8 +1,7 @@
 # Misaka-2Dgame-Unity
 Scroll fight game of the comic Misaka the Railgun, 御坂美琴同人游戏
 
-In prosessing
-编写中
+素材不足暂时搁置，以此为框架重写的新项目：https://github.com/voidarea97/Knight-Scrollgame-unity-2d
 
 可能参考了崩坏2？
 
